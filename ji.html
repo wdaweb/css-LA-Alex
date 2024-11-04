@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: 0;
+
+        }
+
+        .container {
+
+            width: 500px;
+            height: 100px;
+            position: absolute;
+            border: 1px solid #7d7d7d6e;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 170px;
+
+
+            background:
+                linear-gradient(180deg, rgba(252, 252, 252, 0.5), rgba(108, 89, 89, 0.5), rgba(255, 255, 255, 0.5)),
+                linear-gradient(90deg, rgb(252, 252, 252)50%, #d0ca54 50%);
+
+
+
+        }
+
+        .container::before {
+            content: "";
+            background-color: rgb(252, 252, 252);
+            width: 55px;
+            height: 70px;
+            border: 1px solid #7d7d7d6e;
+            position: absolute;
+            top: 15px;
+            left: -57px;
+            background-image: linear-gradient(180deg, white, #a4a2a2, white);
+
+
+        }
+
+        .container::after {
+            content: "";
+            background-color: rgb(252, 252, 252);
+            width: 40px;
+            height: 100px;
+            border: 1px solid #7d7d7d6e;
+            position: absolute;
+
+            left: -90px;
+            border-radius: 15%;
+            background-image: linear-gradient(180deg, white, #a4a2a2, white);
+
+        }
+
+        .last {
+            background-color: rgb(252, 252, 252);
+            width: 55px;
+            height: 70px;
+            border: 1px solid #7d7d7d6e;
+            position: absolute;
+            top: 15px;
+            left: 100%;
+            background-image: linear-gradient(180deg, white, #a4a2a2, white);
+        }
+
+        .last::before {
+            content: "";
+            background-color: rgb(252, 252, 252);
+            width: 100px;
+
+            border: 1px solid #1d18186e;
+            position: absolute;
+            top: 33px;
+            left: 100%;
+        }
+
+        .last::after {
+            content: "";
+            background-color: rgb(17, 16, 16);
+            width: 50px;
+            height: 100px;
+
+            border: 1px solid #1d18186e;
+            position: absolute;
+            top: -17px;
+            right: 270px;
+        }
+
+        .for {
+
+            position: absolute;
+            width: 500px;
+            height: 10px;
+            top: 0;
+            background-image: repeating-linear-gradient(90deg, transparent 0px,
+                    transparent 50px,
+                    #333 50px,
+                    #333 51px,
+                    transparent 51px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        made in TW
+        <div class="last"></div>
+        <div class="for"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
